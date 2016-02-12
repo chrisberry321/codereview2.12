@@ -90,13 +90,70 @@ clear {
 h4 {
   clear: both;
   font-size: 1.8em;
-  margin: 475px 0 5px 8px;
+  position: absolute;
+  top: 1030px;
+  width:600px;
+  margin-left: 480px;
 }
 table {
-  width:800px;
+  width:600px;
   clear: both;
   border-collapse: collapse;
+  position: absolute;
+  top: 1110px;
+margin-left: 280px;
 }
+thead {
+  background-color: #038AA7;
+  color: white;
+  line-height: 2.0em;
+}
+
+th {
+  padding: 0 45px 0 0;
+}
+
+th:nth-child(1) {
+  width: 14em;
+  text-align: left;
+  padding-left: 15px;
+}
+
+tbody{
+  border: 1.5px solid #038AA7;
+}
+
+tbody tr {
+  border: 1.5px solid #038AA7;
+}
+
+tbody tr:nth-child(even) {
+  background: #eee;
+}
+
+th:nth-child(4):hover::after {
+  content: "";
+  position: absolute;
+  background-color: #ffa;
+  left: 500px;
+  top: 20px;
+  height: 155px;
+  width: 80px;
+  z-index: -1;
+}
+tfoot{
+  display: table-footer-group;
+  vertical-align: baseline;
+  border-color: none;
+}
+
+tfoot tr th {
+  text-align: right;
+  font-weight: normal;
+}
+
 footer {
   clear: both;
+  position: absolute;
+  top: 1380px;
 }
