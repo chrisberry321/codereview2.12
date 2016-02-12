@@ -30,10 +30,9 @@ header img{
      -ms-transform: rotate(-16.5deg);
        -o-transform: rotate(-16.5deg);
          tranform: rotate(-16.5deg);
-         -webkit-box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
-        -moz-box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
+    -webkit-box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
+      -moz-box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
         box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
-
 }
 
 header ul {
@@ -46,9 +45,12 @@ header li{
   list-style: none;
   border: 1px solid #4f3a37;
   margin: 0 10px 0 15px;
-  background: #9e6968;
+  background: #571b1a;
   color: white;
   border-radius: 30px;
+  -webkit-box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
+    -moz-box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
+      box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
 }
 header a {
   color: white;
@@ -76,6 +78,7 @@ margin-top: 5px;
   padding-left: 160px;
   margin-top: 20px;
 }
+
 .thumbs img {
   float: right;
   margin: 5px 5px 10px 0;
@@ -83,10 +86,12 @@ margin-top: 5px;
   height: 90px;
   width: 132px;
 }
+
 clear {
   clear: both;
   font: 20px;
 }
+
 h4 {
   clear: both;
   font-size: 1.8em;
@@ -95,16 +100,17 @@ h4 {
   width:600px;
   margin-left: 480px;
 }
+
 table {
   width:600px;
   clear: both;
   border-collapse: collapse;
   position: absolute;
   top: 1110px;
-margin-left: 280px;
+  margin-left: 280px;
 }
 thead {
-  background-color: #038AA7;
+  background-color: #571b1a;
   color: white;
   line-height: 2.0em;
 }
@@ -119,12 +125,8 @@ th:nth-child(1) {
   padding-left: 15px;
 }
 
-tbody{
-  border: 1.5px solid #038AA7;
-}
-
 tbody tr {
-  border: 1.5px solid #038AA7;
+  border: 1.5px solid #571b1a;
 }
 
 tbody tr:nth-child(even) {
@@ -141,19 +143,22 @@ th:nth-child(4):hover::after {
   width: 80px;
   z-index: -1;
 }
-tfoot{
-  display: table-footer-group;
-  vertical-align: baseline;
-  border-color: none;
-}
 
-tfoot tr th {
-  text-align: right;
-  font-weight: normal;
+tfoot th a{
+  float: right;
+  margin-top: 8px;
 }
 
 footer {
-  clear: both;
+  list-style: none;
   position: absolute;
   top: 1380px;
+  left:25px;
+}
+footer li {
+  float:right;
+  list-style: none;
+  font-size: 2em;
+  color: #571b1a;
+  margin-right: 18px;
 }
