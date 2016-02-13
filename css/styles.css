@@ -30,9 +30,9 @@ header img{
      -ms-transform: rotate(-16.5deg);
        -o-transform: rotate(-16.5deg);
          tranform: rotate(-16.5deg);
-    -webkit-box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
-      -moz-box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
-        box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
+  -webkit-box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
+    -moz-box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
+      box-shadow: 4px 4px 5px .8px rgba(147,153,158,1);
 }
 
 header ul {
@@ -55,13 +55,13 @@ header li{
 
 header a {
   color: white;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h3{
   font-family: 'Monoton', cursive;
   font-size: 2.3em;
-margin-top: 5px;
+  margin-top: 5px;
 }
 
 .discription {
@@ -131,9 +131,8 @@ th:nth-child(1) {
   padding-left: 15px;
 }
 td:nth-child(2), td:nth-child(3) {
-padding-left: 18px;
+  padding-left: 18px;
 }
-
 
 tbody tr {
   border: 1.5px solid #571b1a;
@@ -141,6 +140,27 @@ tbody tr {
 
 tbody tr:nth-child(even) {
   background: #eee;
+}
+th:nth-child(2):hover::after {
+  content: "";
+  position: absolute;
+  background-color: #ffa;
+  left: 232px;
+  top: 20px;
+  height: 155px;
+  width: 50px;
+  z-index: -1;
+}
+
+th:nth-child(3):hover::after {
+  content: "";
+  position: absolute;
+  background-color: #ffa;
+  left: 365px;
+  top: 20px;
+  height: 155px;
+  width: 70px;
+  z-index: -1;
 }
 
 th:nth-child(4):hover::after {
@@ -153,7 +173,9 @@ th:nth-child(4):hover::after {
   width: 80px;
   z-index: -1;
 }
-
+tfoot th {
+  padding-right: 8px;
+}
 tfoot th a{
   float: right;
   margin-top: 8px;
